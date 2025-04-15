@@ -1,0 +1,37 @@
+.Slide{
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.Slide1{
+    border: 1px solid gray;
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    width: 200px;
+}
+.Slide1 span{
+    border-bottom: 1px solid white;
+}
+.Slide1 span:hover{
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(255, 251, 0);
+    text-decoration: underline;
+    border-bottom: 1px solid white;
+}
+figcaption{
+    background-color: rgb(129, 61, 61);
+}
+
+.Slide-img{
+        border: 1px solid gray;
+        border-radius: 50%;
+}
+
+

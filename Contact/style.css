@@ -1,0 +1,1155 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Gothic&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body{
+
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./pa.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 5px 10px;
+ 
+   
+}
+.logo{
+  width: 100px;
+   height: 100px;
+   position: relative;
+   right: 120px;
+}
+
+hr{
+  color: #f8ba00;
+  position: relative;
+  bottom: 25px;
+}
+.Contact-header{
+  background-color: black;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px 15px;
+}
+
+.Contact-header div{
+  padding-left: 15px;
+}
+.Contact-link{
+ display: flex;
+ margin-top: 25px;
+ margin-left: 90px;
+}
+
+.Contact-link a{
+  color: #FFFFFF;
+  font-family:Pangolin;
+  font-size: 25px;
+  font-weight: 100px;
+  text-decoration: none;
+  padding: 15px 25px;
+}
+
+.Contact-link b{
+  color: yellow;
+}
+
+.Contact-link b:hover{
+  color: rgb(255, 0, 0);
+}
+
+.Contact-link ul li{
+  list-style: none;
+}
+
+.Contact-header a:hover{
+  transform: rotate3d(80deg);
+  font-family: 'Courier New', Courier, monospace;
+  font-style:inherit;
+  color: rgb(6, 231, 247);
+  border-bottom: 2px solid white;
+}
+
+
+
+ 
+/* icon style see in footer  here is only background*/
+
+.icon{
+  background-color: #525358;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  top: 15px;
+  left: 100px;
+}
+
+
+
+
+
+/* header end */
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* header Responisveness start*/
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  body {
+    background-position: center; /* Adjust background position for larger devices */
+    background-size: cover;
+  }
+
+  .logo {
+    width: 80px; /* Reduce logo size */
+    height: 80px;
+    right: 0; /* Center-align logo for medium screens */
+    margin-left: 15px;
+  }
+
+  .Contact-header {
+    height: auto; /* Allow the height to adapt to content */
+    padding: 15px;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+  }
+
+  .Contact-link {
+    margin-top: 15px; /* Adjust spacing */
+    margin-left: 0; /* Center-align links */
+    justify-content: center; /* Center links */
+    gap: 15px;
+  }
+
+  .Contact-link a {
+    font-size: 20px; /* Adjust font size */
+    padding: 10px 15px; /* Adjust padding */
+  }
+
+  .icon {
+    width: 200px; /* Reduce icon container size */
+    height: 40px;
+    left: 0; /* Center-align */
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 70px; /* Further reduce logo size */
+    height: 70px;
+    right: 0;
+  }
+
+  .Contact-header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .Contact-link {
+    flex-direction: column; /* Stack links vertically */
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .Contact-link a {
+    font-size: 18px; /* Smaller font size */
+    padding: 10px;
+  }
+
+  .icon {
+    width: 180px; /* Adjust size for smaller devices */
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: cover; /* Ensure background fits smaller screens */
+    background-position: center;
+  }
+
+  .logo {
+    width: 60px; /* Reduce logo size for small devices */
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .Contact-header {
+    height: auto; /* Adapt height to fit content */
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .Contact-link {
+    flex-direction: column; /* Stack links */
+    margin: 0; /* Center-align links */
+    gap: 8px;
+  }
+
+  .Contact-link a {
+    font-size: 16px; /* Reduce font size */
+    padding: 8px;
+  }
+
+  .icon {
+    width: 150px; /* Reduce size of icon container */
+    height: 30px;
+    margin-top: 10px;
+  }
+}
+
+
+/*header Responisveness end*/
+
+/* //////////////////////////////////////////////////////////////// */
+
+/* Section */
+section{
+
+  width: 100vw;
+  display: flex;
+}
+
+section h1{
+  
+  font-size: 60px;
+  position: relative;
+  left: 500px;
+}
+/* section h1 span{
+    transform:rotate(30deg);
+} */
+section h1:hover{
+ 
+  border-bottom:2px solid rgb(0, 204, 255);
+}
+
+.Application{
+  position: relative;
+  margin-left: 750px;
+}
+
+.continue-application a{
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+.continue-application {
+  --color: #fff;
+  --background: #404660;
+  --background-hover: #3A4059;
+  --background-left: #2B3044;
+  --folder: #F3E9CB;
+  --folder-inner: #BEB393;
+  --paper: #FFFFFF;
+  --paper-lines: #BBC1E1;
+  --paper-behind: #E1E6F9;
+  --pencil-cap: #fff;
+  --pencil-top: #275EFE;
+  --pencil-middle: #fff;
+  --pencil-bottom: #5C86FF;
+  --shadow: rgba(13, 15, 25, .2);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  padding: 17px 29px 17px 69px;
+  transition: background 0.3s;
+  color: var(--color);
+  background: var(--bg, var(--background));
+}
+
+.continue-application > div {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 53px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+  background: var(--background-left);
+}
+
+.continue-application > div .folder {
+  width: 23px;
+  height: 27px;
+  position: absolute;
+  left: 15px;
+  top: 13px;
+}
+
+.continue-application > div .folder .top {
+  left: 0;
+  top: 0;
+  z-index: 2;
+  position: absolute;
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder .top svg {
+  width: 24px;
+  height: 27px;
+  display: block;
+  fill: var(--folder);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease var(--fds, 0.45s);
+  transform: perspective(120px) rotateY(var(--fr, 0deg));
+}
+
+.continue-application > div .folder:before, .continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  content: "";
+  position: absolute;
+  left: var(--l, 0);
+  top: var(--t, 0);
+  width: var(--w, 100%);
+  height: var(--h, 100%);
+  border-radius: 1px;
+  background: var(--b, var(--folder-inner));
+}
+
+.continue-application > div .folder:before {
+  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  --l: 1px;
+  --t: 1px;
+  --w: 21px;
+  --h: 25px;
+  --b: var(--paper-behind);
+}
+
+.continue-application > div .folder:after {
+  transform: translate(var(--pbx, 0), var(--pby, 0));
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .folder .paper {
+  z-index: 1;
+  --b: var(--paper);
+}
+
+.continue-application > div .folder .paper:before, .continue-application > div .folder .paper:after {
+  content: "";
+  width: var(--wp, 14px);
+  height: 2px;
+  border-radius: 1px;
+  transform: scaleY(0.5);
+  left: 3px;
+  top: var(--tp, 3px);
+  position: absolute;
+  background: var(--paper-lines);
+  box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+}
+
+.continue-application > div .folder .paper:after {
+  --tp: 6px;
+  --wp: 10px;
+}
+
+.continue-application > div .pencil {
+  height: 2px;
+  width: 3px;
+  border-radius: 1px 1px 0 0;
+  top: 8px;
+  left: 105%;
+  position: absolute;
+  z-index: 3;
+  transform-origin: 50% 19px;
+  background: var(--pencil-cap);
+  transform: translateX(var(--pex, 0)) rotate(35deg);
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .pencil:before, .continue-application > div .pencil:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+  width: var(--w, 5px);
+  height: var(--h, 20px);
+  border-radius: var(--br, 2px 2px 0 0);
+  top: var(--t, 2px);
+  left: var(--l, -1px);
+}
+
+.continue-application > div .pencil:before {
+  -webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+  clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+}
+
+.continue-application > div .pencil:after {
+  --b: none;
+  --w: 3px;
+  --h: 6px;
+  --br: 0 2px 1px 0;
+  --t: 3px;
+  --l: 3px;
+  border-top: 1px solid var(--pencil-top);
+  border-right: 1px solid var(--pencil-top);
+}
+
+.continue-application:before, .continue-application:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--color);
+  transform-origin: 9px 1px;
+  transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+  top: 26px;
+  right: 16px;
+  transition: transform 0.3s;
+}
+
+.continue-application:after {
+  --r: 45deg;
+}
+
+.continue-application:hover {
+  --cx: 2px;
+  --bg: var(--background-hover);
+  --fx: -40px;
+  --fr: -60deg;
+  --fd: .15s;
+  --fds: 0s;
+  --pbx: 3px;
+  --pby: -3px;
+  --pbd: .15s;
+  --pex: -24px;
+}
+/* Section End Here */
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Get in touch section start here */
+
+.get{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.getTouch,h2{
+   font-weight: bold;
+   font-size: 35px;
+}
+
+
+/* Get in touch section End here */
+
+
+/*Section & Get Section REsposiveness Start Here */
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  section {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align items */
+  }
+
+  section h1 {
+    font-size: 40px; /* Reduce font size */
+    position: relative;
+    left: 0; /* Center-align on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .Application {
+    margin-left: 0; /* Center-align application button */
+  }
+
+  .continue-application {
+    font-size: 12px; /* Reduce button font size */
+    padding: 15px 25px 15px 60px;
+  }
+
+  .continue-application > div {
+    width: 45px; /* Adjust icon width */
+  }
+}
+
+@media (max-width: 768px) {
+  section h1 {
+    font-size: 35px; /* Further reduce font size */
+    margin-bottom: 15px;
+  }
+
+  .continue-application {
+    font-size: 11px; /* Adjust font size for smaller screens */
+    padding: 12px 20px 12px 50px;
+  }
+
+  .continue-application > div {
+    width: 40px; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 20px; /* Add padding for smaller screens */
+  }
+
+  section h1 {
+    font-size: 28px; /* Smaller font size for mobile */
+  }
+
+  .Application {
+    margin: 0 auto; /* Center align for very small screens */
+    text-align: center;
+  }
+
+  .continue-application {
+    font-size: 10px; /* Adjust button font size */
+    padding: 10px 15px 10px 40px;
+  }
+
+  .continue-application > div {
+    width: 35px; /* Further reduce icon size */
+  }
+
+  .get {
+    font-size: 16px; /* Adjust text size */
+    padding: 10px;
+  }
+
+  .getTouch, h2 {
+    font-size: 25px; /* Adjust header size */
+  }
+}
+
+
+/*Section & Get Section REsposiveness Start Here */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* Form */
+/* ((((((((((((((((((((()))))))))))))))))))))))))((((((()()()()()()((((((((()))))))))))()()(((((((((())))))))))) */
+
+
+.form{
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+    
+}
+
+.Address{
+  color: black;
+  position: relative;
+  right: 220px;
+}
+
+.Address a{
+  font-weight: 100px;
+ padding-left: 5px;
+ color: #272727;
+ text-decoration: none;
+}
+.Address span{
+  position: relative;
+  top: 6px;
+  left: 3px;
+}
+
+.Address hr{
+   
+  color: rgb(245, 0, 0);
+}
+.loc{
+  display: flex;
+}
+
+.ContForm{
+  position: relative;
+  left: 80px;
+}
+ 
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  margin: 20px auto;
+  transform: translate(-50%, -55%);
+  background: rgba(0,0,0,.9);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box p:first-child {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 3px
+}
+
+.login-box a:hover {
+  background: #fff;
+  color: #272727;
+  border-radius: 5px;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff);
+  animation: btn-anim1 1.5s linear infinite;
+}
+button{
+  color: white;
+}
+button:hover{
+  color: #050505;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fff);
+  animation: btn-anim2 1.5s linear infinite;
+  animation-delay: .375s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #fff);
+  animation: btn-anim3 1.5s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #fff);
+  animation: btn-anim4 1.5s linear infinite;
+  animation-delay: 1.125s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+.login-box p:last-child {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.login-box a.a2 {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-box a.a2:hover {
+  background: transparent;
+  color: #aaa;
+  border-radius: 5px;
+} 
+
+
+
+/* Form end here*/
+
+
+/* Form Responsivnes Start */
+
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .form {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .login-box {
+    width: 350px; /* Adjust the width for smaller screens */
+    padding: 30px;
+    transform: translate(-50%, -50%);
+  }
+
+  .login-box p:first-child {
+    font-size: 1.3rem; /* Reduce font size */
+  }
+
+  .login-box .user-box input {
+    font-size: 14px; /* Adjust input font size */
+  }
+
+  .login-box .user-box label {
+    font-size: 14px; /* Adjust label font size */
+  }
+
+  .Address {
+    right: 0; /* Center-align Address */
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    width: 300px; /* Further reduce the width */
+    padding: 25px;
+  }
+
+  .login-box p:first-child {
+    font-size: 1.1rem; /* Reduce font size further */
+  }
+
+  .login-box a {
+    font-size: 14px; /* Adjust button font size */
+    padding: 8px 18px; /* Adjust padding for buttons */
+  }
+
+  .Address a {
+    font-size: 14px; /* Reduce Address link font size */
+  }
+
+  .Address span {
+    font-size: 12px; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    height: auto; /* Allow height to adjust dynamically */
+    padding: 20px;
+  }
+
+  .login-box {
+    width: 90%; /* Make the box take up most of the screen */
+    padding: 20px;
+    transform: translate(-50%, -50%);
+  }
+
+  .login-box p:first-child {
+    font-size: 1rem; /* Reduce font size for headings */
+  }
+
+  .login-box a {
+    font-size: 12px; /* Further reduce button font size */
+    padding: 8px 15px;
+  }
+
+  .Address {
+    font-size: 14px; /* Adjust overall text size */
+  }
+
+  .Address a {
+    font-size: 12px;
+  }
+
+  .Address span {
+    font-size: 10px;
+  }
+}
+
+
+
+/* Form Responsivnes End */
+
+
+
+/* Footer Start here */
+
+footer{
+      width: 100vw;
+      height: 60vh;
+      background-color: #050505;
+      color: white;
+      display: flex;
+      justify-content: center;
+      justify-content: space-evenly;
+      justify-items: center;
+
+}
+
+
+.ft-logo{
+
+  position: relative;
+  top: 15px;
+  left: 200px;
+
+
+}
+
+ /*footer icon start here */
+
+ .ft-icon{
+ 
+  background-color: #525358;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  top: 75px;
+  left: 50px;
+}
+
+ .parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-right: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.child:hover {
+  background-color: rgb(228, 210, 210);
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.button:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  border-radius: 50%;
+}
+
+/* footer  icon end here*/
+
+/* last 4 Col Start Here */
+.footer-Col{
+  margin-top: 5em;
+  padding: 5px 5px;
+  
+}
+
+footer h4{
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+}
+
+footer span{
+  border-bottom: 1px solid purple;
+  
+}
+footer ul li{
+  list-style: none;
+  letter-spacing: 1px;
+  font-size: large;
+
+  
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+ footer a:hover{
+  color: purple;
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+  border-bottom: #aaa 1px solid;
+  
+ }
+/* footer h4{
+  text-decoration: underline;
+} */
+/* last 4 Col End Here */
+ 
+
+/* Foorter Responsivness */
+ 
+/* Footer Responsive Styling */
+@media (max-width: 1024px) {
+  footer {
+    height: auto; /* Adjust footer height on smaller screens */
+    padding: 20px;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .ft-logo {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px; /* Space between logo and icons */
+  }
+
+  .ft-icon {
+    width: 220px; /* Adjust icon width */
+    height: 45px; /* Adjust icon height */
+    top: 50px;
+    left: 0;
+  }
+
+  .parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+
+  .child {
+    width: 40px; /* Adjust size of icons */
+    height: 40px;
+    margin: 10px; /* Space out the icons */
+  }
+
+  .footer-Col {
+    text-align: center; /* Center-align footer columns */
+    margin-top: 2em; /* Adjust spacing */
+  }
+
+  footer h4 {
+    left: 0;
+    font-size: 1.2rem; /* Adjust heading font size */
+  }
+
+  footer ul li {
+    font-size: 1rem; /* Adjust list item font size */
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 10px;
+  }
+
+  .ft-logo {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 15px;
+  }
+
+  .ft-icon {
+    width: 180px; /* Further reduce icon size */
+    height: 40px;
+    top: 40px;
+    left: 0;
+  }
+
+  .parent {
+    display: flex;
+    justify-content: space-around; /* Align icons evenly */
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+
+  .child {
+    width: 30px; /* Smaller icons */
+    height: 30px;
+  }
+
+  .footer-Col {
+    margin-top: 1em;
+    padding: 10px 0;
+  }
+
+  footer h4 {
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  footer ul li {
+    font-size: 0.9rem; /* Smaller list items */
+  }
+
+  footer a {
+    font-size: 14px; /* Adjust link font size */
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 15px;
+    height: auto; /* Allow dynamic height for small screens */
+  }
+
+  .ft-icon {
+    width: 150px; /* Further reduce icon size */
+    height: 35px;
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center;
+  }
+
+  .child {
+    width: 25px; /* Even smaller icons */
+    height: 25px;
+    margin: 5px; /* Space out the icons */
+  }
+
+  .footer-Col {
+    margin-top: 1em;
+    text-align: center; /* Center-align all footer columns */
+  }
+
+  footer h4 {
+    font-size: 1rem; /* Adjust heading size */
+  }
+
+  footer ul li {
+    font-size: 0.8rem; /* Further reduce list item font size */
+  }
+
+  footer a {
+    font-size: 12px; /* Adjust link font size */
+  }
+}
+
+
+/* Foorter Responsivness */

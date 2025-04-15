@@ -1,0 +1,171 @@
+*{
+    margin: auto;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* header Start Here */
+
+.logo{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    box-shadow: 4px 4px 10px;
+    border-radius: 50%;
+    margin-right: 500px;
+}
+
+.name{
+    position: relative;
+    margin-left: -500px;
+    font-size: 50px;
+}
+header{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    background-color: aqua;
+
+}
+
+nav{
+    width: 350px;
+    display: flex;
+    font-size: 25px;
+    justify-content: space-evenly;
+} 
+
+select{
+    font-size: 25px;
+    background-color: aqua;
+    text-decoration: none;
+    border: none;
+}
+
+
+header>ul>li{
+    list-style: none;
+    padding: 12px;
+}
+
+/* header end here */
+
+/* ///////////////////////////////(   ANOUNCEMNET  )/////////////////////////// */
+
+marquee{
+    width: 100%;
+    height: 30px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: yellow;
+    padding: 5px;
+}
+
+/* ///////////////////////////////(   ANOUNCEMNET  )/////////////////////////// */
+
+/* main start here */
+
+main{
+    /* width: 100%; */
+    height: 400px;
+    display: flex;
+    justify-content: end;
+    /* margin-top: 60px; */
+    margin: 50px;
+}
+div>h1{
+    margin-top: -160px;
+    margin-left: -30px;
+}
+
+main>div>p{
+    font-size: 20px;
+    line-height: 25px;
+}
+.sub{
+    width: 350px;
+    height: 200px;
+}
+
+/* Aside Start here */
+
+main>aside{
+    width: 350px;
+    min-height: 450px;
+    background-color: pink;
+    border: groove yellowgreen 2px;
+    border-top-right-radius: 38px;
+    border-bottom-left-radius: 38px;
+    align-items: end;
+    margin-left: 20%;
+    padding: 20px;
+}
+
+aside>ul>li{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+/* 
+contient{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: end;
+} */
+
+
+
+
+.filesBt{
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: pink;
+    margin-top: 30px;
+    border: solid 2px blueviolet;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.filesBt:hover{
+    background-color: blue;
+    box-shadow: 4px 4px 10px ;
+}
+
+
+/* ////////////////(((((((((((((((((((((    MAIN      )))))))))))))))))))))))////////////////// */
+.fileContainer{
+    width: 100%;
+    min-height: 60px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+div>span{
+    padding: 20px 30px;
+    background-color: blue;
+}
+
+
+
+/* ////////////////(((((((((((((((((((((    footer     )))))))))))))))))))))))////////////////// */
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color:black;
+    display: flex;
+    color: white;
+}
+
+footer>ul>li{
+    list-style: none;
+    padding: 3px;
+}
+footer>ul>li>a{
+    color: white;
+}
+
